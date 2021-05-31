@@ -1,0 +1,79 @@
+﻿   
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+	<xs:element name="Electronic_Medical_Records" type="EMRStype"/>
+		<xs:complexType name="EMRStype">
+			<xs:sequence>
+			<xs:element name="Employee" type="Employeetype" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Employeetype">
+			<xs:sequence>
+			<xs:element name="personal_data" type="personal_datatype" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="Claim_informations" type="claiminfotype" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="Insurance_informations" type="insurancetype" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="Medical_history" type="medicaltype" />
+			</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="personal_datatype">
+			<xs:sequence>
+										<xs:element name="ID" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="firstname" type="xs:string" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="lastname" type="xs:string" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="date_of_birth" type="xs:date" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="current_age" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="weight_in_kg" type="xs:decimal" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="Gender" type="xs:string" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="phone_number" type="xs:string" minOccurs="0" maxOccurs="2"/>
+										<xs:element name="email_adress" type="xs:string" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="city" type="xs:string" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="address" type="xs:string" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="zipcode" type="xs:string" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="emergency_contact" type="xs:string" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="phone_emergency_contact" type="xs:string" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="Social_security_number" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="claiminfotype" >
+			<xs:sequence>
+										<xs:element name="Claim" type="claimType" minOccurs="0" maxOccurs="unbounded"/>
+										
+			</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="claimType">
+			<xs:sequence>
+										<xs:element name="Medical" type="xs:integer" />
+										<xs:element name="Optical" type="xs:integer" />
+										<xs:element name="Dental" type="xs:integer" />
+			</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="insurancetype">
+			<xs:sequence>
+										<xs:element name="code_insurance" type="xs:string" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="subscription_date" type="xs:date" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="expiration_date" type="xs:date" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="Paid_on_time" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+									
+										<xs:element name="Insurance_type" type="xs:string" minOccurs="0" maxOccurs="1" />
+			</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="medicaltype">
+			<xs:sequence>
+											<xs:element name="last_consultation" type="xs:date" minOccurs="0" maxOccurs="1"/>
+											<xs:element name="surgeries" type="xs:boolean" minOccurs="0" maxOccurs="unbounded"/>
+											<xs:element name="Labo_test_result" type="xs:string" minOccurs="0" maxOccurs="1"/>
+											<xs:element name="Allergies" type="allergieType"/>
+											<xs:element name="Currently_under_medication" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+											<xs:element name="Medication_list" type="xs:string" minOccurs="0" maxOccurs="1"/>
+											<xs:element name="Addiction" type="xs:string" minOccurs="0" maxOccurs="1"/>
+											<xs:element name="Immunization_status" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="allergieType" >
+			<xs:sequence>
+														<xs:element name="Food" type="xs:boolean" minOccurs="0" maxOccurs="unbounded"/>
+														<xs:element name="Animal" type="xs:boolean" minOccurs="0" maxOccurs="unbounded"/>
+														<xs:element name="Medication" type="xs:boolean" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			</xs:complexType>
+			</xs:schema>

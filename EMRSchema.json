@@ -1,0 +1,348 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome7",
+    "definitions": {
+        "Welcome7": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Electronic_Medical_Records": {
+                    "$ref": "#/definitions/ElectronicMedicalRecords"
+                },
+                "#omit-xml-declaration": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "#omit-xml-declaration",
+                "Electronic_Medical_Records"
+            ],
+            "title": "Welcome7"
+        },
+        "ElectronicMedicalRecords": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "-xmlns:xs": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http"
+                    ]
+                },
+                "-xs:noNamespaceSchemaLocation": {
+                    "type": "string"
+                },
+                "Employee": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Employee"
+                    }
+                }
+            },
+            "required": [
+                "-xmlns:xs",
+                "-xs:noNamespaceSchemaLocation",
+                "Employee"
+            ],
+            "title": "ElectronicMedicalRecords"
+        },
+        "Employee": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "personal_data": {
+                    "$ref": "#/definitions/PersonalData"
+                },
+                "Claim_informations": {
+                    "$ref": "#/definitions/ClaimInformationsUnion"
+                },
+                "Insurance_informations": {
+                    "$ref": "#/definitions/InsuranceInformations"
+                },
+                "Medical_history": {
+                    "$ref": "#/definitions/MedicalHistory"
+                }
+            },
+            "required": [
+                "Claim_informations",
+                "Insurance_informations",
+                "Medical_history",
+                "personal_data"
+            ],
+            "title": "Employee"
+        },
+        "ClaimInformationsClass": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Claim": {
+                    "$ref": "#/definitions/ClaimUnion"
+                }
+            },
+            "required": [
+                "Claim"
+            ],
+            "title": "ClaimInformationsClass"
+        },
+        "ClaimElement": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Medical": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "Optical": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "Dental": {
+                    "type": "string",
+                    "format": "integer"
+                }
+            },
+            "required": [
+                "Dental",
+                "Medical",
+                "Optical"
+            ],
+            "title": "ClaimElement"
+        },
+        "InsuranceInformations": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "code_insurance": {
+                    "type": "string"
+                },
+                "subscription_date": {
+                    "type": "string"
+                },
+                "expiration_date": {
+                    "type": "string"
+                },
+                "Paid_on_time": {
+                    "type": "string",
+                    "format": "boolean"
+                },
+                "Insurance_type": {
+                    "$ref": "#/definitions/InsuranceType"
+                }
+            },
+            "required": [
+                "Insurance_type",
+                "Paid_on_time",
+                "code_insurance",
+                "expiration_date",
+                "subscription_date"
+            ],
+            "title": "InsuranceInformations"
+        },
+        "MedicalHistory": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "last_consultation": {
+                    "type": "string"
+                },
+                "surgeries": {
+                    "type": "string",
+                    "format": "boolean"
+                },
+                "Labo_test_result": {
+                    "$ref": "#/definitions/LaboTestResult"
+                },
+                "Allergies": {
+                    "$ref": "#/definitions/Allergies"
+                },
+                "Currently_under_medication": {
+                    "type": "string",
+                    "format": "boolean"
+                },
+                "Medication_list": {
+                    "type": "string"
+                },
+                "Addiction": {
+                    "$ref": "#/definitions/Addiction"
+                },
+                "Immunization_status": {
+                    "$ref": "#/definitions/ImmunizationStatus"
+                }
+            },
+            "required": [
+                "Addiction",
+                "Allergies",
+                "Currently_under_medication",
+                "Immunization_status",
+                "Labo_test_result",
+                "Medication_list",
+                "last_consultation",
+                "surgeries"
+            ],
+            "title": "MedicalHistory"
+        },
+        "Allergies": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Food": {
+                    "type": "string",
+                    "format": "boolean"
+                },
+                "Animal": {
+                    "type": "string",
+                    "format": "boolean"
+                },
+                "Medication": {
+                    "type": "string",
+                    "format": "boolean"
+                }
+            },
+            "required": [
+                "Animal",
+                "Food",
+                "Medication"
+            ],
+            "title": "Allergies"
+        },
+        "PersonalData": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "ID": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "firstname": {
+                    "type": "string"
+                },
+                "lastname": {
+                    "type": "string"
+                },
+                "date_of_birth": {
+                    "type": "string"
+                },
+                "current_age": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "weight_in_kg": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "Gender": {
+                    "$ref": "#/definitions/Gender"
+                },
+                "phone_number": {
+                    "type": "string"
+                },
+                "email_adress": {
+                    "type": "string"
+                },
+                "city": {
+                    "type": "string"
+                },
+                "address": {
+                    "type": "string"
+                },
+                "zipcode": {
+                    "type": "string"
+                },
+                "emergency_contact": {
+                    "type": "string"
+                },
+                "phone_emergency_contact": {
+                    "type": "string"
+                },
+                "Social_security_number": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "Gender",
+                "ID",
+                "Social_security_number",
+                "address",
+                "city",
+                "current_age",
+                "date_of_birth",
+                "email_adress",
+                "emergency_contact",
+                "firstname",
+                "lastname",
+                "phone_emergency_contact",
+                "phone_number",
+                "weight_in_kg",
+                "zipcode"
+            ],
+            "title": "PersonalData"
+        },
+        "ClaimInformationsUnion": {
+            "anyOf": [
+                {
+                    "$ref": "#/definitions/ClaimInformationsClass"
+                },
+                {
+                    "type": "string"
+                }
+            ],
+            "title": "ClaimInformationsUnion"
+        },
+        "ClaimUnion": {
+            "anyOf": [
+                {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ClaimElement"
+                    }
+                },
+                {
+                    "$ref": "#/definitions/ClaimElement"
+                }
+            ],
+            "title": "ClaimUnion"
+        },
+        "InsuranceType": {
+            "type": "string",
+            "enum": [
+                "Normal",
+                "Premium"
+            ],
+            "title": "InsuranceType"
+        },
+        "Addiction": {
+            "type": "string",
+            "enum": [
+                "Smoking",
+                "None"
+            ],
+            "title": "Addiction"
+        },
+        "ImmunizationStatus": {
+            "type": "string",
+            "enum": [
+                "Good",
+                "Bad",
+                "Week"
+            ],
+            "title": "ImmunizationStatus"
+        },
+        "LaboTestResult": {
+            "type": "string",
+            "enum": [
+                "Good",
+                "None"
+            ],
+            "title": "LaboTestResult"
+        },
+        "Gender": {
+            "type": "string",
+            "enum": [
+                "Male",
+                "Female"
+            ],
+            "title": "Gender"
+        }
+    }
+}

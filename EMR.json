@@ -1,0 +1,528 @@
+{
+  "Electronic_Medical_Records": {
+    "-xmlns:xs": "http://www.w3.org/2001/XMLSchema-instance",
+    "-xs:noNamespaceSchemaLocation": "EMR.xsd",
+    "Employee": [
+      {
+        "personal_data": {
+          "ID": "1",
+          "firstname": "\n\t\t\t\tJames\n\t\t\t",
+          "lastname": "\n\t\t\t\tButt\n\t\t\t",
+          "date_of_birth": "\n\t\t\t\t1969-01-22\n\t\t\t",
+          "current_age": "52",
+          "weight_in_kg": "70",
+          "Gender": "Male",
+          "phone_number": "\n\t\t\t\t504-621-8927\n\t\t\t",
+          "email_adress": "\n\t\t\t\tjbutt@gmail.com\n\t\t\t",
+          "city": "\n\t\t\t\tNew Orleans\n\t\t\t",
+          "address": "\n\t\t\t\t\t6649 N Blue Gum St\n\t\t\t\t",
+          "zipcode": "\n\t\t\t\t\t70116\n\t\t\t\t",
+          "emergency_contact": "Josephine Butt",
+          "phone_emergency_contact": "\n\t\t\t\t504-845-1427\n\t\t\t",
+          "Social_security_number": "9 5 6 7 10 11 8 12 4 2"
+        },
+        "Claim_informations": {
+          "Claim": [
+            {
+              "Medical": "0",
+              "Optical": "56",
+              "Dental": "80"
+            },
+            {
+              "Medical": "120",
+              "Optical": "47",
+              "Dental": "867"
+            },
+            {
+              "Medical": "0",
+              "Optical": "65",
+              "Dental": "0"
+            }
+          ]
+        },
+        "Insurance_informations": {
+          "code_insurance": "JaBu69",
+          "subscription_date": "2005-06-21",
+          "expiration_date": "2020-06-21",
+          "Paid_on_time": "true",
+          "Insurance_type": "Normal"
+        },
+        "Medical_history": {
+          "last_consultation": "2020-05-21",
+          "surgeries": "false",
+          "Labo_test_result": "Good",
+          "Allergies": {
+            "Food": "true",
+            "Animal": "false",
+            "Medication": "false"
+          },
+          "Currently_under_medication": "false",
+          "Medication_list": "None",
+          "Addiction": "Smoking",
+          "Immunization_status": "Good"
+        }
+      },
+      {
+        "personal_data": {
+          "ID": "2",
+          "firstname": "\n\t\t\t\tJosephine\n\t\t\t",
+          "lastname": "\n\t\t\t\tDarakjy\n\t\t\t",
+          "date_of_birth": "1970-01-14\n\t\t\t",
+          "current_age": "51",
+          "weight_in_kg": "66",
+          "Gender": "Female",
+          "phone_number": "\n\t\t\t\t810-292-9388\n\t\t\t",
+          "email_adress": "\n\t\t\t\tjosephine_darakjy@darakjy.org\n\t\t\t",
+          "city": "\n\t\t\t\tBrighton\n\t\t\t",
+          "address": "\n\t\t\t\t\t4 B Blue Ridge Blvd\n\t\t\t\t",
+          "zipcode": "\n\t\t\t\t\t48116\n\t\t\t\t",
+          "emergency_contact": "Marc Darakjy",
+          "phone_emergency_contact": "\n\t\t\t\t810-374-9840\n\t\t\t",
+          "Social_security_number": "12 8 5 1 2 7 10 3 4 9 "
+        },
+        "Claim_informations": {
+          "Claim": {
+            "Medical": "0",
+            "Optical": "567",
+            "Dental": "980"
+          }
+        },
+        "Insurance_informations": {
+          "code_insurance": "JoDa70",
+          "subscription_date": "2003-08-01",
+          "expiration_date": "2022-08-01",
+          "Paid_on_time": "false",
+          "Insurance_type": "Normal"
+        },
+        "Medical_history": {
+          "last_consultation": "2019-11-18",
+          "surgeries": "false",
+          "Labo_test_result": "Good",
+          "Allergies": {
+            "Food": "false",
+            "Animal": "false",
+            "Medication": "true"
+          },
+          "Currently_under_medication": "false",
+          "Medication_list": "None",
+          "Addiction": "None",
+          "Immunization_status": "Good"
+        }
+      },
+      {
+        "personal_data": {
+          "ID": "3",
+          "firstname": "\n\t\t\t\tArt\n\t\t\t",
+          "lastname": "\n\t\t\t\tVenere\n\t\t\t",
+          "date_of_birth": "1971-01-22\n\t\t\t\t\n\t\t\t",
+          "current_age": "50",
+          "weight_in_kg": "98",
+          "Gender": "Female",
+          "phone_number": "\n\t\t\t\t856-636-8749\n\t\t\t",
+          "email_adress": "\n\t\t\t\tart@venere.org\n\t\t\t",
+          "city": "\n\t\t\t\tBridgeport\n\n\t\t\t",
+          "address": "\n\t\t\t\t\t8 W Cerritos Ave #54\n\t\t\t\t",
+          "zipcode": "\n\t\t\t\t\t8014\n\t\t\t\t",
+          "emergency_contact": "None",
+          "phone_emergency_contact": "\t202-555-0166\n\t\t\t",
+          "Social_security_number": "6 7 10 11 3 8 2 1 9 4 "
+        },
+        "Claim_informations": {
+          "Claim": [
+            {
+              "Medical": "230",
+              "Optical": "0",
+              "Dental": "0"
+            },
+            {
+              "Medical": "0",
+              "Optical": "100",
+              "Dental": "0"
+            },
+            {
+              "Medical": "25",
+              "Optical": "80",
+              "Dental": "0"
+            }
+          ]
+        },
+        "Insurance_informations": {
+          "code_insurance": "ArVe71",
+          "subscription_date": "2015-01-09",
+          "expiration_date": "2024-01-09\n",
+          "Paid_on_time": "true",
+          "Insurance_type": "Premium"
+        },
+        "Medical_history": {
+          "last_consultation": "2018-09-02",
+          "surgeries": "true",
+          "Labo_test_result": "Good",
+          "Allergies": {
+            "Food": "false",
+            "Animal": "false",
+            "Medication": "false"
+          },
+          "Currently_under_medication": "true",
+          "Medication_list": "Aerus, Nasonex",
+          "Addiction": "None",
+          "Immunization_status": "Good"
+        }
+      },
+      {
+        "personal_data": {
+          "ID": "9",
+          "firstname": "\n\t\t\t\tSage\n\t\t\t",
+          "lastname": "\n\t\t\t\tWieser\n\t\t\t",
+          "date_of_birth": "\n\t\t\t\t1997-04-23\n\t\t\t",
+          "current_age": "24",
+          "weight_in_kg": "78",
+          "Gender": "Male",
+          "phone_number": "\n\t\t\t\t617-555-0129\n\t\t\t",
+          "email_adress": "\n\t\t\t\tsage_wieser@cox.net\n\n\t\t\t",
+          "city": "\n\t\t\t\tSioux Falls\n\t\t\t",
+          "address": "\n\t\t\t\t\t5 Boston Ave #88\n\t\t\t\t",
+          "zipcode": "\n\t\t\t\t\t57105\n\t\t\t\t",
+          "emergency_contact": " Sage Fabien",
+          "phone_emergency_contact": "\n\t\t\t\t617-555-0110\n\t\t\t",
+          "Social_security_number": "\n\t\t\t\t10 9 6 11 1 8 7 2 4 3\n\t\t\t"
+        },
+        "Claim_informations": {
+          "Claim": [
+            {
+              "Medical": "0",
+              "Optical": "0",
+              "Dental": "468"
+            },
+            {
+              "Medical": "38",
+              "Optical": "59",
+              "Dental": "0"
+            }
+          ]
+        },
+        "Insurance_informations": {
+          "code_insurance": "SaWi97",
+          "subscription_date": "\n\t\t\t\t2013-07-29\n\t\t\t",
+          "expiration_date": "2021-07-29\n",
+          "Paid_on_time": "true",
+          "Insurance_type": "Normal"
+        },
+        "Medical_history": {
+          "last_consultation": "\n\t\t\t\t2019-01-14\n\t\t\t",
+          "surgeries": "false",
+          "Labo_test_result": "None",
+          "Allergies": {
+            "Food": "true",
+            "Animal": "false",
+            "Medication": "false"
+          },
+          "Currently_under_medication": "false",
+          "Medication_list": "None",
+          "Addiction": "Smoking",
+          "Immunization_status": "Good"
+        }
+      },
+      {
+        "personal_data": {
+          "ID": "10",
+          "firstname": "\n\t\t\t\tKris\n\t\t\t",
+          "lastname": "\n\t\t\t\tMarrier\n\t\t\t",
+          "date_of_birth": "\n\t\t\t\t1993-03-23\n\t\t\t",
+          "current_age": "27",
+          "weight_in_kg": "65",
+          "Gender": "Male",
+          "phone_number": "\n\t\t\t\t617-555-0116\n\t\t\t",
+          "email_adress": "\n\t\t\t\tkris@gmail.com\n\t\t\t",
+          "city": "Baltimore",
+          "address": "\n\t\t\t\t\t228 Runamuck Pl #2808\n\t\t\t\t",
+          "zipcode": "\n\t\t\t\t\t21224\n\t\t\t\t",
+          "emergency_contact": "Josephine Marrier",
+          "phone_emergency_contact": "\n\t\t\t\t617-555-0108\n\t\t\t",
+          "Social_security_number": "\n\t\t\t\t1 4 10 2 7 9 11 8 6 5\n\t\t\t"
+        },
+        "Claim_informations": {
+          "Claim": {
+            "Medical": "3200",
+            "Optical": "0",
+            "Dental": "0"
+          }
+        },
+        "Insurance_informations": {
+          "code_insurance": "KrMa93",
+          "subscription_date": "\n\t\t\t\t2015-06-04\n\t\t\t",
+          "expiration_date": "2023-06-04\n",
+          "Paid_on_time": "false",
+          "Insurance_type": "Premium"
+        },
+        "Medical_history": {
+          "last_consultation": "\n\t\t\t\t2020-04-12\n\t\t\t",
+          "surgeries": "false",
+          "Labo_test_result": "Good",
+          "Allergies": {
+            "Food": "true",
+            "Animal": "true",
+            "Medication": "false"
+          },
+          "Currently_under_medication": "true",
+          "Medication_list": "false",
+          "Addiction": "None",
+          "Immunization_status": "Good"
+        }
+      },
+      {
+        "personal_data": {
+          "ID": "4",
+          "firstname": "\n\t\t\t\tLenna\n\t\t\t",
+          "lastname": "\n\t\t\t\tPaprocki\n\t\t\t",
+          "date_of_birth": "\n\t\t\t\t1972-01-16\n\t\t\t",
+          "current_age": "49",
+          "weight_in_kg": "65",
+          "Gender": "Female",
+          "phone_number": "\n\t\t\t\t907-385-4412\n\t\t\t",
+          "email_adress": "\n\t\t\t\tlpaprocki@hotmail.com\n\t\t\t",
+          "city": "\n\t\t\t\tAnchorage\n\t\t\t",
+          "address": "\n\t\t\t\t\t639 Main St\n\t\t\t\t",
+          "zipcode": "\n\t\t\t\t\t99501\n\t\t\t\t",
+          "emergency_contact": "Jone Paprocki ",
+          "phone_emergency_contact": "\n\t\t\t\t907-921-2010\n\t\t\t",
+          "Social_security_number": "\n\t\t\t\t3 6 9 8 1 12 10 7 4 5\n\t\t\t"
+        },
+        "Claim_informations": "\n\t\t\t\n\t\t",
+        "Insurance_informations": {
+          "code_insurance": "LePa72",
+          "subscription_date": "2019-08-29",
+          "expiration_date": "2021-08-29\n",
+          "Paid_on_time": "true",
+          "Insurance_type": "Normal"
+        },
+        "Medical_history": {
+          "last_consultation": "2019-11-30",
+          "surgeries": "false",
+          "Labo_test_result": "None",
+          "Allergies": {
+            "Food": "false",
+            "Animal": "true",
+            "Medication": "false"
+          },
+          "Currently_under_medication": "false",
+          "Medication_list": "None",
+          "Addiction": "Smoking",
+          "Immunization_status": "Bad"
+        }
+      },
+      {
+        "personal_data": {
+          "ID": "5",
+          "firstname": "\n\t\t\t\tDonette\t\n\t\t\t",
+          "lastname": "\n\t\t\t\tFoller\n\t\t\t",
+          "date_of_birth": "\n\t\t\t\t1973-01-22\n\t\t\t",
+          "current_age": "48",
+          "weight_in_kg": "72",
+          "Gender": "Female",
+          "phone_number": "\n\t\t\t\t513-570-1893\n\t\t\t",
+          "email_adress": "\n\t\t\t\tdonette.foller@cox.net\n\t\t\t",
+          "city": "\n\t\t\t\tHamilton\n\t\t\t",
+          "address": "\n\t\t\t\t\t34 Center St\n\t\t\t\t",
+          "zipcode": "\n\t\t\t\t\t45011\n\n\t\t\t\t",
+          "emergency_contact": "Jack Foller ",
+          "phone_emergency_contact": "\n\t\t\t\t513-549-4561\n\t\t\t",
+          "Social_security_number": "\n\t\t\t\t12 7 3 1 10 6 9 11 5 4\n\t\t\t"
+        },
+        "Claim_informations": {
+          "Claim": {
+            "Medical": "0",
+            "Optical": "1200",
+            "Dental": "0"
+          }
+        },
+        "Insurance_informations": {
+          "code_insurance": "DoFo73",
+          "subscription_date": "2008-02-10",
+          "expiration_date": "2022-02-10\n",
+          "Paid_on_time": "false",
+          "Insurance_type": "Premium"
+        },
+        "Medical_history": {
+          "last_consultation": "2017-12-31",
+          "surgeries": "false",
+          "Labo_test_result": "Good",
+          "Allergies": {
+            "Food": "false",
+            "Animal": "false",
+            "Medication": "true"
+          },
+          "Currently_under_medication": "false",
+          "Medication_list": "None",
+          "Addiction": "None",
+          "Immunization_status": "Good"
+        }
+      },
+      {
+        "personal_data": {
+          "ID": "6",
+          "firstname": "\n\t\t\t\tSimona\n\t\t\t",
+          "lastname": "\n\t\t\t\tMorasca\n\t\t\t",
+          "date_of_birth": "\n\t\t\t\t1988-06-21\n\t\t\t",
+          "current_age": "33",
+          "weight_in_kg": "54",
+          "Gender": "Female",
+          "phone_number": "\n\t\t\t\t202-555-0113\n\t\t\t",
+          "email_adress": "\n\t\t\t\tsimona@morasca.com\n\n\t\t\t",
+          "city": "\n\t\t\t\tAshland\n\t\t\t",
+          "address": "\n\t\t\t\t\t3 Mcauley Dr\n\t\t\t\t",
+          "zipcode": "\n\t\t\t\t\t44805\n\t\t\t\t",
+          "emergency_contact": " Fabien Morasca ",
+          "phone_emergency_contact": "\n\t\t\t\t202-555-0114\n\t\t\t",
+          "Social_security_number": "\n\t\t\t\t8 4 7 6 3 5 9 10 1 11\n\t\t\t"
+        },
+        "Claim_informations": {
+          "Claim": [
+            {
+              "Medical": "300",
+              "Optical": "200",
+              "Dental": "0"
+            },
+            {
+              "Medical": "100",
+              "Optical": "50",
+              "Dental": "0"
+            },
+            {
+              "Medical": "30",
+              "Optical": "150",
+              "Dental": "0"
+            },
+            {
+              "Medical": "25",
+              "Optical": "0",
+              "Dental": "39"
+            }
+          ]
+        },
+        "Insurance_informations": {
+          "code_insurance": "SiMo88",
+          "subscription_date": "\n\t\t\t\t2003-08-11\n\t\t\t",
+          "expiration_date": "2021-08-11\n",
+          "Paid_on_time": "true",
+          "Insurance_type": "Premium"
+        },
+        "Medical_history": {
+          "last_consultation": "\n\t\t\t\t2013-12-11\n\t\t\t",
+          "surgeries": "false",
+          "Labo_test_result": "Good",
+          "Allergies": {
+            "Food": "false",
+            "Animal": "false",
+            "Medication": "false"
+          },
+          "Currently_under_medication": "true",
+          "Medication_list": "Aerus",
+          "Addiction": "None",
+          "Immunization_status": "Week"
+        }
+      },
+      {
+        "personal_data": {
+          "ID": "7",
+          "firstname": "\n\t\t\t\tMitsue\n\t\t\t",
+          "lastname": "\n\t\t\t\tTollner\n\t\t\t",
+          "date_of_birth": "\n\t\t\t\t1989-09-28\n\t\t\t",
+          "current_age": "34",
+          "weight_in_kg": "98",
+          "Gender": "Male",
+          "phone_number": "\n\t\t\t\t202-555-0174\n\t\t\t",
+          "email_adress": "\n\t\t\t\tmitsue_tollner@yahoo.com\n\t\t\t",
+          "city": "\n\t\t\t\tChicago\n\t\t\t",
+          "address": "\n\t\t\t\t\t7 Eads St\n\t\t\t\t",
+          "zipcode": "\n\t\t\t\t\t60632\n\t\t\t\t",
+          "emergency_contact": " Beatrice Tollner ",
+          "phone_emergency_contact": "\n\t\t\t\t202-555-0156\n\t\t\t",
+          "Social_security_number": "\n\t\t\t\t6 11 7 12 10 4 1 9 5 3\n\t\t\t"
+        },
+        "Claim_informations": {
+          "Claim": {
+            "Medical": "900",
+            "Optical": "0",
+            "Dental": "100"
+          }
+        },
+        "Insurance_informations": {
+          "code_insurance": "MiTo89",
+          "subscription_date": "\n\t\t\t\t2007-10-12\n\t\t\t",
+          "expiration_date": "2021-10-12\n",
+          "Paid_on_time": "true",
+          "Insurance_type": "Normal"
+        },
+        "Medical_history": {
+          "last_consultation": "\n\t\t\t\t2016-09-08\n\t\t\t",
+          "surgeries": "true",
+          "Labo_test_result": "None",
+          "Allergies": {
+            "Food": "false",
+            "Animal": "false",
+            "Medication": "true"
+          },
+          "Currently_under_medication": "false",
+          "Medication_list": "None",
+          "Addiction": "None",
+          "Immunization_status": "Good"
+        }
+      },
+      {
+        "personal_data": {
+          "ID": "8",
+          "firstname": "\n\t\t\t\tLeota\n\t\t\t",
+          "lastname": "\n\t\t\t\tDilliard\n\t\t\t",
+          "date_of_birth": "\n\t\t\t\t1991-08-09\n\t\t\t",
+          "current_age": "30",
+          "weight_in_kg": "128",
+          "Gender": "Female",
+          "phone_number": "\n\t\t\t\t202-555-0149\n\t\t\t",
+          "email_adress": "\n\t\t\t\tleota@hotmail.com\n\t\t\t",
+          "city": "\n\t\t\t\tSan Jose\n\t\t\t",
+          "address": "\n\t\t\t\t\t7 W Jackson Blvd\n\t\t\t\t",
+          "zipcode": "\n\t\t\t\t\t95111\n\t\t\t\t",
+          "emergency_contact": " Jean Dilliard",
+          "phone_emergency_contact": "\n\t\t\t\t617-555-0129\n\t\t\t",
+          "Social_security_number": "\n\t\t\t\t8 11 1 9 10 4 12 5 3 6\n\t\t\t"
+        },
+        "Claim_informations": {
+          "Claim": [
+            {
+              "Medical": "0",
+              "Optical": "0",
+              "Dental": "90"
+            },
+            {
+              "Medical": "55",
+              "Optical": "30",
+              "Dental": "0"
+            }
+          ]
+        },
+        "Insurance_informations": {
+          "code_insurance": "LeDi91",
+          "subscription_date": "\n\t\t\t\t2012-04-05\n\t\t\t",
+          "expiration_date": "2025-04-05\n",
+          "Paid_on_time": "false",
+          "Insurance_type": "Normal"
+        },
+        "Medical_history": {
+          "last_consultation": "\n\t\t\t\t2018-01-15\n\t\t\t",
+          "surgeries": "true",
+          "Labo_test_result": "None",
+          "Allergies": {
+            "Food": "false",
+            "Animal": "false",
+            "Medication": "false"
+          },
+          "Currently_under_medication": "true",
+          "Medication_list": "Thyroidax",
+          "Addiction": "None",
+          "Immunization_status": "Week"
+        }
+      }
+    ]
+  },
+  "#omit-xml-declaration": "yes"
+}
